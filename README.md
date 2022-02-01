@@ -2,6 +2,12 @@
 
 Terraform module to manage tfstate in AWS
 
+
+## WARNING
+
+If you use this module to manage tfstate, it will be difficult to delete resources with "$ terraform destroy" because S3 bucket is protected.
+
+
 ## How to use
 
 1. In your terraform, use this module to create S3 bucket and DynamoDB table.
